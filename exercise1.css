@@ -9,8 +9,8 @@
     width: 100vw;
     display:grid;
     gap: 10px;
-    grid-template-columns: 0.8fr 0.4fr 1.2fr 0.5fr;
-    grid-template-rows: 100px 2fr 1fr 3fr;
+    grid-template-columns: 0.8fr 200px 1.2fr 0.5fr;
+    grid-template-rows: 0.3fr 0.7fr 0.5fr 200px;
 }
 
 .item1{

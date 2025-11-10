@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-page-display{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 100px 200px 100px;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+}
+
+.grid-header{
+    grid-area: header;
+}
+
+.grid-aside-section {
+    grid-area: sidebar;
+}
+
+.grid-main-content{
+    grid-area: content;
+}
+
+.grid-footer{
+    grid-area: footer;
+}
