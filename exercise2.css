@@ -18,19 +18,20 @@
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
     display: grid;
-    grid-template-columns: 200px 2fr 1fr;
+    grid-template-columns: 200px 1fr;
     grid-template-rows: 100px 1fr 100px;
     grid-template-areas:
-    "header header header"
-    "sidebar content content"
-    "footer footer footer";
+    "header header"
+    "sidebar content"
+    "footer footer";
 }
 
 .grid-header{
     grid-area: header;
     background-color: var(--header-background-color);
     color: var(--text-color-white);
-    justify-items: center;
+    display: grid;
+    justify-content: center;
     align-content: center;
 }
 
@@ -65,16 +66,18 @@
 .grid-main-content div{
     background-color: var(--div-background-color);
     border-radius: 10px;
+    display: grid;
     align-content: center;
-    text-align: center;
+    justify-content: center;
     color: var(--text-color-black);
     font-weight: bold;
 }
 
 .grid-footer{
     grid-area: footer;
-    background-color: black;
-    color: white;
+    background-color: var(--footer-background-color);
+    color: var(--text-color-white);
+    display: grid;
     align-content: center;
 }
 
@@ -117,6 +120,7 @@
     }
 
     .grid-aside-section ul {
+        display: grid;
         justify-items: center;
     }
 
