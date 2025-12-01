@@ -1,0 +1,118 @@
+/* Header styling */
+.header {
+    background-color: #4a90e2;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.header_title {
+    font-size: 2rem;
+}
+
+.header_subtitle {
+    font-size: 1.2rem;
+    color: #e0e4e8;
+}
+
+/* Navigation styling */
+.nav {
+    background-color: #333;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav_list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_item {
+    margin: 0 1rem;
+}
+
+.nav_link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav_link:hover {
+    color: #FFD700;
+}
+
+.nav_link--active {
+    color: #FFD700;
+    text-decoration: underline;
+}
+
+.nav_link--highlight {
+    color: lightgray;
+    font-weight: bold;
+}
+
+.main_content {
+    padding: 2rem;
+}
+
+/* Article styling */
+
+.article {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.article--featured {
+    border-color: #4a90e2;
+    background-color: #f0f8ff;
+}
+
+.article_title {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.article_text {
+    font-size: 1rem;
+    color: #555;
+}
+
+.article_button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.article_button--primary {
+    background-color: #4a90e2;
+    color: white;
+}
+
+.article_button--secondary {
+    background-color: #f0ad4e;
+    color: white;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer_text {
+    font-size: 1rem;
+    color: lightgray;
+}
+
+.footer_text--important {
+    font-weight: bold;
+    color: white;
+}
