@@ -4,7 +4,7 @@
     --color-background: #f9f9f9;
     --color-primary: #4CAF50;
     --color-primary-hover: #45a049;
-    --color-featured-bg: #e8f5e9;
+    --color-featured-bg: #caeecd;
     --color-black: #333;
     --color-white: #fff;
     --color-gray-light: #ddd;
@@ -27,6 +27,7 @@
         grid-template-rows: auto 1fr auto;
         grid-template-columns: 1fr;
         height: 100vh;
+
     }
 }
 
@@ -39,10 +40,10 @@
         grid-row: 1;    
 
         & nav ul {
-        display: flex;
-        justify-content: center;
-        list-style: none;    
-        margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            list-style: none;    
+            margin-top: 1rem;
     
             & li {
                 margin: 0 1rem;
@@ -100,7 +101,7 @@
             box-shadow: 0 4px 8px var(--color-gray-dark);
         }
 
-        & .featured {
+        &.featured {
             border-color: var(--color-primary);
             background-color: var(--color-featured-bg);
         }
@@ -115,7 +116,7 @@
         }
 
         & .title {
-            font-size: 1.5rem;
+            font-size: 7cqw;
             margin-bottom: 0.5rem;
         }
 
@@ -144,10 +145,7 @@
             }
         }
 
-        @container card-component (width < 275px) {
-            .title {
-                font-size: 1.2rem;
-            }
+        @container (width < 275px) {
 
             .description {
                 font-size: 0.85rem;
@@ -155,6 +153,8 @@
 
             img {
                 max-width: 80%;
+                align-self: center;
+                margin-bottom: 1rem;
             }
         }
     }
